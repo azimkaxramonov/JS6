@@ -2,7 +2,7 @@
 
  let menu = 'cheeseburger wopper doubleburger '
  
- let choice = prompt(' our menu cheeseburger wopper doubleburger ' ).trim()
+ let choice = prompt(' our menu cheeseburger wopper doubleburger ' ).toLowerCase.trim()
  
  let drink = (' pepsi mirinda lipton ')
 
@@ -14,13 +14,13 @@
     let not = confirm(' Do you want to order anythung else from drinks')
     if(not === true){
 
-    let choicedrink = prompt(' our drink menu pepsi mirinda lipton').trim()
+    let choicedrink = prompt(' our drink menu pepsi mirinda lipton').toLowerCase().trim()
     if(drink .includes(choicedrink)){
         console.log('ok')
         alert('ok')
        let nots =confirm(' Do you want to order anythung else from dessert ')
        
-       let dessertchoice = prompt(' our dessert menu icecream cake snikers ')
+       let dessertchoice = prompt(' our dessert menu icecream cake snikers ').toLowerCase().trim()
        if(nots === true)
        {
      
